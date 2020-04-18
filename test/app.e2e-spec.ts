@@ -15,10 +15,16 @@ describe('AppController (e2e)', () => {
     await app.init()
   })
 
-  it('/ (GET)', () => {
+  it('should return success/lab/success (GET)', () => {
     return request(app.getHttpServer())
-      .get('/')
+      .get('/lab/success')
       .expect(200)
-      .expect('Hello World!')
+      .expect('all right')
+  })
+  it('should return error /lab/error (GET)', () => {
+    return request(app.getHttpServer())
+      .get('/lab/error ')
+      .expect(400)
+      .expect('response with error')
   })
 })
