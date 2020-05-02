@@ -5,7 +5,7 @@ export class LabController {
   @Get('success')
   @HttpCode(200)
   getSuccess() {
-    return 'all right'
+    return 'all right!!!!!!!!'
   }
 
   @Get('delay')
