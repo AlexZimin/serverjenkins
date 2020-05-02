@@ -19,7 +19,7 @@ describe('AppController (e2e)', () => {
     return request(app.getHttpServer())
       .get('/lab/success')
       .expect(200)
-      .expect('all right')
+      .expect('all right!!!!!!!!')
   })
   it('should return error /lab/error (GET)', () => {
     return request(app.getHttpServer())
